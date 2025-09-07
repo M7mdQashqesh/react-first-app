@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul li {
+  padding: 5px 15px;
+  background-color: rgb(79, 79, 79);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

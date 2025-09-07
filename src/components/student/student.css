@@ -1,0 +1,38 @@
+.std-wrapper {
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.std-wrapper.dangerous {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.std-wrapper > div {
+  display: flex;
+  align-items: center;
+}
+
+.std-wrapper > div > b {
+  min-width: 140px;
+  text-align: start;
+}
+
+.std-wrapper > div.absents-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.std-wrapper > div.absents-div p {
+  display: flex;
+  gap: 20px;
+}
+
+.std-wrapper button {
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}

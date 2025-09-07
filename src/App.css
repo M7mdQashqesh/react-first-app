@@ -1,0 +1,60 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.students {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .students {
+    display: block;
+    width: 100%;
+  }
+}
+
+.add-student-screen>div:not(:last-of-type) {
+  margin-top: 5px;
+}
+
+.add-student-screen>div>label {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.add-student-screen .actions {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.add-student-screen .actions button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 8px solid gray;
+  border-top-color: crimson;
+  animation: loader 1s ease infinite;
+}
